@@ -1547,8 +1547,8 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateDevice_Ex(IOTHUB_REGIS
         LogError("deviceCreateInfo must have a valid version");
         result = IOTHUB_REGISTRYMANAGER_INVALID_VERSION;
     }
-    else if ((deviceInfo->version < IOTHUB_DEVICE_CREATE_EX_VERSION_1) ||
-            (deviceInfo->version > IOTHUB_DEVICE_CREATE_EX_VERSION_LATEST))
+    else if ((deviceInfo->version < IOTHUB_DEVICE_EX_VERSION_1) ||
+            (deviceInfo->version > IOTHUB_DEVICE_EX_VERSION_LATEST))
     {
         LogError("deviceInfo must have a valid version");
         result = IOTHUB_REGISTRYMANAGER_INVALID_VERSION;
