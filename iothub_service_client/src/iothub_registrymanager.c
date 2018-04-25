@@ -135,11 +135,11 @@ typedef struct IOTHUB_DEVICE_OR_MODULE_TAG
 
 typedef struct IOTHUB_REGISTRY_DEVICE_OR_MODULE_CREATE_TAG
 {
+    IOTHUB_REGISTRYMANAGER_MODEL_TYPE type;
     const char* deviceId;
     const char* primaryKey;
     const char* secondaryKey;
     IOTHUB_REGISTRYMANAGER_AUTH_METHOD authMethod;
-    IOTHUB_REGISTRYMANAGER_MODEL_TYPE type;
     //Device exclusive fields
     bool iotEdge_capable;
     //Module exclusive fields
